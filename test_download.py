@@ -47,7 +47,6 @@ xfail = pytest.mark.xfail
 @pytest.mark.skip_selenium
 class TestDownload(object):
 
-    @xfail(reason="Dunno? marking until i figure this out")
     def test_osx_download_button_returns_status_code_200(self, mozwebqa):
         url = '%s/products/download.html' % mozwebqa.base_url
         response = requests.get(url)
@@ -57,7 +56,6 @@ class TestDownload(object):
         response = requests.get(link)
         Assert.equal(response.status_code, 200)
 
-    @xfail(reason="Dunno? marking until i figure this out")
     def test_linux_download_button_returns_status_code_200(self, mozwebqa):
         url = '%s/products/download.html' % mozwebqa.base_url
         response = requests.get(url)
@@ -67,7 +65,6 @@ class TestDownload(object):
         response = requests.head(link)
         Assert.equal(response.status_code, 200)
 
-    @xfail(reason="Dunno? marking until i figure this out")
     def test_windows_download_button_returns_status_code_200(self, mozwebqa):
         url = '%s/products/download.html' % mozwebqa.base_url
         response = requests.get(url)
@@ -77,7 +74,6 @@ class TestDownload(object):
         response = requests.head(link)
         Assert.equal(response.status_code, 200)
 
-    @xfail(reason="Dunno? marking until i figure this out")
     def test_download_button_returns_status_code_200_using_google_chrome(self, mozwebqa):
         '''https://bugzilla.mozilla.org/show_bug.cgi?id=672713'''
         url = '%s/products/download.html' % mozwebqa.base_url
