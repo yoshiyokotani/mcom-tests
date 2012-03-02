@@ -7,4 +7,4 @@ pytest-mozwebqa==0.7.1
 selenium
 unittestzero
 BeautifulSoup==3.2.0
-requests
+requests==0.9.1
