@@ -42,7 +42,6 @@ from BeautifulSoup import BeautifulStoneSoup
 from unittestzero import Assert
 import pytest
 import requests
-xfail = pytest.mark.xfail
 
 @pytest.mark.skip_selenium
 class TestDownload(object):
