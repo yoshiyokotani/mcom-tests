@@ -15,6 +15,7 @@ class TestStatus(object):
 
     @pytest.mark.nondestructive
     @pytest.mark.nonbedrock
+    #insertion of a test comment
     def test_status_code_returns_404(self, mozwebqa):
         url = mozwebqa.base_url + '/abck'
         response = requests.get(url)
